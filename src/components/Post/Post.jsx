@@ -10,11 +10,9 @@ import plug from '@src/assets/img/gallery.svg';
 import './Post.sass';
 
 const Post = () => {
-  const { tags, picture, popUpEnabled, setPopUp } = React.useContext(Context);
+  const { tags, picture, popUpEnabled, menuItems } = React.useContext(Context);
 
   const [clickCoords, setClickCoords] = React.useState({});
-
-  const menuItems = ['Filters', 'Presets', 'Draw mode', 'Share'];
 
   const handleClick = (e) => {
     setPopUp(true);

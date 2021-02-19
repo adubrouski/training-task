@@ -6,6 +6,7 @@ const ContextProvider = ({ children }) => {
   const [picture, setPicture] = React.useState(null);
   const [tags, setTags] = React.useState([]);
   const [popUpEnabled, setPopUp] = React.useState(false);
+  const menuItems = ['Filters', 'Presets', 'Draw mode', 'Share'];
 
   return (
     <Context.Provider
@@ -16,6 +17,7 @@ const ContextProvider = ({ children }) => {
         setTags,
         popUpEnabled,
         setPopUp,
+        menuItems,
       }}>
       {children}
     </Context.Provider>
