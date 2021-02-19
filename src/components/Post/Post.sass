@@ -1,0 +1,81 @@
+.post
+  display: flex
+  justify-content: space-around
+  align-items: center
+  width: 90%
+  margin: 40px auto
+  @media (max-width: 1330px)
+    flex-direction: column
+  &__menu
+    font-family: sans-serif
+    font-weight: 300
+    max-width: 400px
+    height: 500px
+    border-radius: 20px
+    background-color: #0e5a4b
+    background-image: linear-gradient(132deg, #ac9a52 0%, #0e5a4b 100%)
+    box-shadow: 0 3px 15px 0 rgba(0, 0, 0, .5)
+    @media (max-width: 1330px)
+      margin-bottom: 35px
+    ul
+      display: flex
+      flex-direction: column
+      justify-content: space-around
+      align-items: center
+      width: 100%
+      height: 100%
+      padding: 0
+      margin: 0
+      list-style: none
+      user-select: none
+  &__menu-item
+    width: 90%  
+    background-color: rgba(0, 0, 0, .5)
+    border-radius: 10px
+    border: 2px solid transparent
+    padding: 20px
+    cursor: pointer
+    color: #e2e2e2
+    font-size: 18px
+    box-shadow: 0 3px 15px 0 rgba(0, 0, 0, .5)
+    transition: all .6s
+    margin: 0 150px
+    &:hover
+      background-color: transparent
+      border-color: #c5c3c3
+      color: black
+    &:active
+      animation: item .1s
+      @keyframes item
+        0%
+          transform: translateY(1px)
+        25%
+          transform: translateY(0)
+        50%
+          transform: translateY(3px)
+        100%
+          transform: translateY(0)
+  &__image
+    &-content
+      display: flex
+      justify-content: center
+      align-items: center
+      min-height: 240px
+      width: 700px
+      font-family: sans-serif
+      background: #8b8989
+      box-shadow: 0 3px 15px 0 rgba(0, 0, 0, .5)
+      border-radius: 20px
+      overflow: hidden
+      &--plug
+        width: 200px
+    &-wrapper
+      position: relative
+      overflow: hidden
+      &--picture
+        display: block
+        position: relative
+        max-width: 100%
+        box-shadow: 0 3px 15px 0 rgba(0, 0, 0, .5)
+        cursor: pointer
+  

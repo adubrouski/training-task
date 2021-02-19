@@ -1,0 +1,21 @@
+.note
+  display: inline-block
+  background-color: #161616
+  margin: 10px 30px 20px 0
+  padding: 10px 15px
+  border-radius: 18px
+  color: #817272
+  font-size: 17px
+  cursor: pointer
+  box-shadow: 0 3px 15px 0 rgba(0, 0, 0, .5)
+  transition: all .5s
+  animation: note .5s
+  @keyframes note
+    0%
+      opacity: 0
+    100%
+      opacity: 1
+  &--highlight
+    background: #585858
+    color: #060404
+    box-shadow: 0 3px 15px 0 rgba(0, 0, 0, .5)

@@ -1,0 +1,44 @@
+.popup
+  font-family: sans-serif
+  position: fixed
+  width: 100vw
+  height: 100vw
+  top: 0
+  left: 0
+  background-color: rgba(0, 0, 0, 0.5)
+  z-index: 300
+  &__content
+    position: absolute
+    width: 425px
+    height: 215px
+    top: 35vh
+    right: 50%
+    transform: translateX(50%)
+    padding: 25px
+    background-color: #4e4848
+    border-radius: 10px
+    box-shadow: 0 3px 15px 0 rgba(0, 0, 0, .5)
+    animation: popup .5s
+    @keyframes popup
+      0%
+        top: 0vh
+      50%
+        top: 35vh
+      75%
+        top: 33vh
+      100%
+        top: 35vh
+  &__form
+    height: 100%
+    input:focus
+      outline: none
+    input::placeholder
+      color:  #b5b5b5
+    input[type="submit"]
+      background-color: #236323
+  &__buttonsWrapper
+    display: flex
+    width: 100%
+    justify-content: space-between
+    margin-top: 20px
+

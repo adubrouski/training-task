@@ -1,0 +1,52 @@
+.header
+  width: 100%
+  min-height: 300px
+  font-family: sans-serif
+  &__navbar
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 90%
+    height: 100px
+    margin: 10px auto 0 auto
+  &__search
+    width: 30%
+    position: relative
+    &::before
+      content: ''
+      display: block
+      position: absolute
+      top: 9px
+      left: 9px
+      height: 20px
+      width: 20px
+      background: url('../../assets/img/magnifer.svg')
+      background-repeat: no-repeat
+      background-size: cover
+  &__searchbar
+    position: relative
+    height: 40px
+    padding-left: 30px
+    background: transparent
+    border: 3px solid #aba9a9
+    color: #aba9a9
+    box-shadow: 0 3px 15px 0 rgba(0, 0, 0, .5)
+    border-radius: 10px
+    &:focus
+      outline: none
+  &__button
+    width: 100px
+    height: 50px
+    box-shadow: 0 3px 15px 0 rgba(0, 0, 0, .5)
+    background-color: #236323
+    border: none
+    cursor: pointer
+    border-radius: 10px
+    color: #c3c3c3
+    transition-duration: .5s
+    &:hover
+      background-color: #368636
+      color: #ffffff
+    &:focus
+      outline: none
+  

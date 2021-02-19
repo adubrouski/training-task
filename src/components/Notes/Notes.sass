@@ -1,0 +1,84 @@
+.notes
+  position: relative
+  font-family: sans-serif
+  width: 90%
+  min-height: 220px
+  padding: 60px 25px 25px 25px
+  background-color: #272727
+  border-radius: 20px
+  margin: 0 auto 50px auto
+  box-shadow: 0 3px 15px 0 rgba(0, 0, 0, .5)
+  user-select: none
+  &::after
+    content: ''
+    display: block
+    position: absolute
+    top: 53px
+    right: 0
+    width: 100%
+    height: 2px
+    background: #929292
+  &__title
+    font-family: 'Roboto', sans-serif
+    font-weight: 300
+    margin: 0
+    padding: 0
+    color: #c5c5c5
+    position: absolute
+    top: 14px
+    left: 29px
+    @media (max-width: 520px)
+      left: 50%
+      transform: translateX(-50%)
+  &__wrapper
+    color: #c3c3c3
+    @media (max-width: 520px)
+      display: none
+  &__toggle
+    position: absolute
+    top: 11px
+    right: 150px
+    height: 32px
+    width: 52px
+    border-radius: 16px
+    display: inline-block
+    margin: 0
+    border: 2px solid #654FEC
+    background: tranparent
+    transition: all .2s ease
+    &:after
+      content: ''
+      position: absolute
+      top: 2px
+      left: 2px
+      width: 24px
+      height: 24px
+      border-radius: 50%
+      background: white
+      box-shadow: 0 1px 2px rgba(44,44,44,.2)
+      transition: all .2s cubic-bezier(.5,.1,.75,1.35)
+    &:checked
+      &:after
+        transform: translatex(20px)
+  &--latest
+    position: absolute
+    top: 19px
+    right: 213px
+  &--all
+    position: absolute
+    top: 19px
+    right: 120px
+  &__placeholder
+    font-family: sans-serif
+    font-weight: 900
+    text-align: center
+    font-size: 30px 
+    margin-top: 50px
+    color: #929292
+
+input[type="checkbox"]
+  appearance: none
+  cursor: pointer
+  &:focus
+    outline: 0
+
